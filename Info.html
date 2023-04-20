@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="Deploy a Project to Your Server with Git, initial-scale=1.0">
-    <title>Git</title>
-</head Git>
+    <meta name="viewport" content="width=Information, initial-scale=1.0">
+    <title>Information</title>
+</head>
 <body>
-    <a href="index.html">home</a>
-    <a href="Info.html">Information</a>
-    <body background="https://daveceddia.com/images/deploy-project-with-git.png"
     <br>
 <hr>
-<h1> Deploy a Project to Your Server with Git</h1>
-    <body bgcolor="#RRGGBB">
-        <body text="#RRGGBB So you’ve got a local git repository, and you want to deploy it to your own server. Maybe the repo is kept in GitHub, maybe not. Maybe your server is on DigitalOcean, or AWS, or in your basement. It doesn’t much matter.
+<h1> Info</h1>
+</body>
+<front color="#FF0000"></front> 
+<front face="Arial"></front>
+<b>So you’ve got a local git repository, and you want to deploy it to your own server. Maybe the repo is kept in GitHub, maybe not. Maybe your server is on DigitalOcean, or AWS, or in your basement. It doesn’t much matter.
 
-        The goal: when you run git push, deploy the latest master branch to the server. Let’s set it up.
-        
-        How to Deploy a Git Repo
+    The goal: when you run git push, deploy the latest master branch to the server. Let’s set it up.
+</b>
+<front face="Arial"></front>  <i><b>How to Deploy a Git Repo
+
         There are lots of ways to do this. On one end of the spectrum is copying files with scp or rsync or even FTP. On the other, more modern side, there’s full-blown continuous deployment systems like CircleCI.
         
         This approach sits in the middle. You don’t need to set up or sign up for any services. This is 100% DIY. But it’s using git to do the deploy, so it’s a step above just copying files, because you’re deploying a specific commit (not just whatever files are laying around).
         
-        Here’s a rough diagram of what will happen with this setup: On the server…
+        Here’s a rough diagram of what will happen with this setup:
+    
+        On the server…
         We’ll create a “bare” git repository, to receive the deployed files (bare_project.git)
         The bare repo will not have our actual project files, which isn’t terribly useful, so…
         A post-receive hook in there will check out the files into a “worktree” (a separate folder, deployed_project in the diagram)
         We can customize the post-receive hook to do extra stuff too: install packages, run a build, restart a service, etc.
         On your computer…
         Add the server as a “remote” to the git repo, using the path to the bare repo on the server
-        Just git push and off it goes"
-    </body>
-    <h?><</Git h?>
-</body>
+        Just git push and off it goes</b></i>
 </html>
